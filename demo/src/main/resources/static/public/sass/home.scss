@@ -1,0 +1,123 @@
+@import 'colors';
+
+
+body {
+    background-color: $background-blue-color;
+    font-family: sans-serif;
+    * {
+        //border: 1px solid red;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5vh;
+        width: 100vw;
+        background-color: $nav-background-color;
+        border-bottom: 2px solid black;
+        box-shadow: 0px 5px 8px #888888;
+        nav {
+            a {
+                text-decoration: none;
+                color: $nav-links-color;
+                &:hover {
+                    cursor: pointer;
+                    color: $nav-links-hover-color;
+                }
+            }
+            
+            width: 50%;
+            font-size: 2em;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        button {
+            width: 10%;
+            margin-right: 1%;
+            font-size: 1.5em;
+            border: 3px outset $button-text-border-color;
+            border-radius: 10px;
+            background-color: $button-color;
+            color: black; 
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 10px 0px $button-glow-color;
+            }
+            &:active {
+                margin-top: 5px;
+                border: 3px inset $button-text-border-color;
+                box-shadow: none;
+            }
+        }
+        
+    }
+    #midsection{
+        display: flex;
+    }
+    #content {
+        height: 90vh;
+        width: 80vw;
+    }
+    aside {
+        border-left: 3px solid black;
+        padding: 3px;
+        height: 90vh;
+        width: 20vw;
+    }
+    footer {
+        height: 5vh;
+        width: 100vw;
+        color: $nav-links-color;
+        background-color: $nav-background-color;
+        text-align: center;
+        box-shadow: 1px -5px 8px black;
+    }
+    h1 {
+        color: $text-normal-color;
+    }
+    p {
+        color: $text-light-color;
+    }
+    #login-screen {
+        display:none;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 10;
+        background-color: rgba(18,25,25,0.5);
+    }
+    #login-model {
+        background-color: white;
+        z-index: 30;
+        width: 25%;
+        height: 25%;
+        margin: auto;
+        margin-top: 15%;
+        font-family: sans-serif;
+        font-weight: bold;
+        border: 5px solid black;
+        border-radius: 30px;
+    }
+    #login-form {
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+    .submit {
+        background-color: darkred;
+        border-radius: 10px;
+        color: white;
+        height: 2em;
+        width: 25%;
+    }
+    input {
+        border: 3px solid black;
+    }
+    #username-input {
+        margin-bottom: 10px;
+    }
+}
