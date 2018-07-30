@@ -18,10 +18,10 @@ body {
       height: 100%;
       display: flex;
       justify-content: space-around; }
-      body header nav a {
+      body header nav .navLink {
         text-decoration: none;
         color: #b6bdc2; }
-        body header nav a:hover {
+        body header nav .navLink:hover {
           cursor: pointer;
           color: #828ba1; }
     body header button {
@@ -42,9 +42,13 @@ body {
   body #midsection {
     display: flex; }
   body #content {
+    background-image: url("/public/images/alexander-mcferon-757085-unsplash.jpg");
+    background-size: cover;
     height: 90vh;
     width: 80vw; }
   body aside {
+    Background-color: #1d1f13;
+    color: #bdc9a4;
     border-left: 3px solid black;
     padding: 3px;
     height: 90vh;

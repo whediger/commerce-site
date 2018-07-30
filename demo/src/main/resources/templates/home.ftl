@@ -16,9 +16,9 @@
   <body>
       <header>
         <nav>
-          <a href="/cars">cars</a> |
-          <a href="/boats">boats</a> |
-          <a href="/houses">houses</a>
+          <a class="navLink" href="/cars">cars</a> |
+          <a class="navLink" href="/boats">boats</a> |
+          <a class="navLink" href="/houses">houses</a>
         </nav>
         <button id="login-button" type="button" onclick="showLogin()">login</button>
       </header>
