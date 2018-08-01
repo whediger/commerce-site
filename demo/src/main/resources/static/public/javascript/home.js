@@ -3,5 +3,5 @@ $(document).ready(function(){
 });
 
 function showLogin(){
-  $('#login-screen').show();
+  $('#login-model').css("right", "0");
 }

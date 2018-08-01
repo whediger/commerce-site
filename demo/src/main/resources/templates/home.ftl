@@ -14,6 +14,7 @@
     <script src="/public/javascript/home.js" type="text/javascript"></script>
   </head>
   <body>
+
       <header>
         <nav>
           <a class="navLink" href="/cars">cars</a> |
@@ -39,19 +40,14 @@
       <footer>
         <section id="copywrite">Copywrite © 2018 - HEDgear Software</section>
       </footer>
-
-      <div id="login-screen">
-        <div id="login-model">
-          <form id="login-form" action="/home" method="POST">
-            <label for="username-input">User Name:</label><br>
-            <input type="text" name="name" id="username-input"><br>
-            <label for="password-input">Password: </label><br>
-            <input type="text" name="password" id="passowrd-input"><br><br>
-            <input class="submit" type="submit" value="submit">
-          </form>
-        </div>
+      <div id="login-model">
+        <form id="login-form" action="/home" method="POST">
+          <label for="username-input">User Name:</label><br>
+          <input type="text" name="name" id="username-input"><br>
+          <label for="password-input">Password: </label><br>
+          <input type="text" name="password" id="passowrd-input"><br><br>
+          <input class="submit" type="submit" value="submit">
+        </form>
       </div>
-
-
   </body>
 </html>
