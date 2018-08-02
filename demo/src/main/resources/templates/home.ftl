@@ -26,10 +26,12 @@
       <div id="midsection">
         <div id="content">
           <h1>Awesome Sale Shack</h1>
-          <p id="welcome">welcome ${user.getName()}, your password is: ${user.getPassword()}</p>
         </div>
 
         <aside>
+          welcome: ${(user.name)!"default Joe!"}<br>
+          your password is: ${(user.password)!}<br>
+          missing value: ${(user.name)!}<br>
           stuff on the side<br>
           total items in cart<br>
           total: $34,000,000<br>

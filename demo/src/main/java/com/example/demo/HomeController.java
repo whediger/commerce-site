@@ -5,8 +5,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestMapping;
-import java.util.HashMap;
-import java.util.Map;
 
 @Controller
 public class HomeController {
@@ -17,8 +15,8 @@ public class HomeController {
 
   @GetMapping("/home")
   public String home(Model model){
-    User user = new User();
-    model.addAttribute("user", user);
+    // User user = new User("test", "data");
+    // model.addAttribute("user", user.getHashMap());
     return "home";
   }
 
@@ -27,7 +25,7 @@ public class HomeController {
                       @RequestParam("password") String password,
                       Model model) {
     User user = new User(name, password);
-    model.addAttribute("user", user);
+    model.addAttribute("user", user.getHashMap());
     return "home";
   }
 

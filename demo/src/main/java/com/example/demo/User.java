@@ -1,5 +1,9 @@
 package com.example.demo;
 
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class User {
 
   private String name;
@@ -29,5 +33,12 @@ public class User {
 
   public void setPassword(String password){
     this.password = password;
+  }
+
+  public Map getHashMap() {
+    Map<String, Object> user = new HashMap<String, Object>();
+    user.put("name", this.name);
+    user.put("password", this.password);
+    return user;
   }
 }
