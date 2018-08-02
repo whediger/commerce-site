@@ -81,12 +81,14 @@ body {
   body #login-form {
     margin-top: 5%;
     margin-left: 20%; }
-  body .submit {
-    background-color: darkred;
+  body .submit, body #cancellogin {
+    background-color: darkgreen;
     border-radius: 10px;
     color: white;
     height: 2em;
     width: 25%; }
+  body #cancellogin {
+    background-color: darkred; }
   body input {
     border: 3px solid black; }
   body #username-input {

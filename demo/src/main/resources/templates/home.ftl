@@ -31,7 +31,7 @@
         <aside>
           welcome: ${(user.name)!"default Joe!"}<br>
           your password is: ${(user.password)!}<br>
-          missing value: ${(user.name)!}<br>
+          missing value: ${(user.missing)!}<br>
           stuff on the side<br>
           total items in cart<br>
           total: $34,000,000<br>
@@ -49,6 +49,7 @@
           <label for="password-input">Password: </label><br>
           <input type="text" name="password" id="passowrd-input"><br><br>
           <input class="submit" type="submit" value="submit">
+          <input id="cancellogin" type="button" value="cancel">
         </form>
       </div>
   </body>
