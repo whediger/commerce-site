@@ -1,8 +1,28 @@
 body {
   background-color: #b1bedd;
   font-family: sans-serif; }
-  body h1 {
-    font-size: 3em; }
+  body #title {
+    height: 170px;
+    width: 570px;
+    margin-left: 25%;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 3px ridge;
+    background: rgba(230, 233, 230, 0.5); }
+    body #title h1 {
+      margin-top: 55px;
+      margin-left: 40px;
+      position: fixed;
+      font-family: fantasy;
+      font-size: 3.2em; }
+    body #title h2 {
+      margin-top: 90px;
+      margin-left: 40px;
+      position: fixed;
+      font-family: monospace;
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: .13em; }
   body header {
     display: flex;
     align-items: center;
@@ -20,10 +40,10 @@ body {
       justify-content: space-around; }
       body header nav .navLink {
         text-decoration: none;
-        color: #b6bdc2; }
+        color: #828ba1; }
         body header nav .navLink:hover {
           cursor: pointer;
-          color: #828ba1; }
+          color: #b6bdc2; }
     body header button {
       width: 10%;
       margin-right: 1%;
@@ -41,13 +61,15 @@ body {
         border: 3px inset #c88300;
         box-shadow: none; }
   body #midsection {
-    display: flex; }
-  body #content {
+    display: flex;
     background-image: url("/public/images/alexander-mcferon-757085-unsplash.jpg");
-    background-size: cover;
+    background-size: cover; }
+  body #content {
     height: 90vh;
-    width: 80vw; }
+    min-width: 80vw; }
   body aside {
+    margin-left: 20vw;
+    transition: margin-left 0.5s;
     Background-color: #1d1f13;
     color: #bdc9a4;
     border-left: 3px solid black;
@@ -57,7 +79,7 @@ body {
   body footer {
     height: 5vh;
     width: 100vw;
-    color: #b6bdc2;
+    color: #828ba1;
     background-color: #213964;
     text-align: center;
     box-shadow: 1px -5px 8px black; }
@@ -70,7 +92,7 @@ body {
     right: -25%;
     top: 5vh;
     transition: right 0.3s;
-    background-color: white;
+    background-color: lightgray;
     width: 20%;
     height: 20%;
     font-family: sans-serif;
@@ -78,6 +100,16 @@ body {
     border: 5px solid black;
     border-top: none;
     border-radius: 0px 0px 0px 30px; }
+    body #login-model .submit, body #login-model #cancellogin {
+      border: 2px outset #c88300;
+      border-radius: 5px;
+      outline: 0; }
+      body #login-model .submit:hover, body #login-model #cancellogin:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 0px #e3a92c; }
+      body #login-model .submit:active, body #login-model #cancellogin:active {
+        border: 3px inset #c88300;
+        box-shadow: none; }
   body #login-form {
     margin-top: 5%;
     margin-left: 20%; }

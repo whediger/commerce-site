@@ -7,9 +7,32 @@ body {
     * {
         //border: 1px solid red;
     }
-    h1 {
-        font-size: 3em;
+    #title {
+        height: 170px;
+        width: 570px;
+        margin-left: 25%;
+        margin-top: 10%;
+        border-radius: 50%;
+        border: 3px ridge;
+        background: rgba(230,233,230,.5);
+        h1 {
+            margin-top: 55px;
+            margin-left: 40px;
+            position: fixed;
+            font-family: fantasy;
+            font-size: 3.2em;
+        }
+        h2 {
+            margin-top: 90px;
+            margin-left: 40px;
+            position: fixed;
+            font-family: monospace;
+            font-size: 1.2em;
+            font-weight: bold;
+            letter-spacing: .13em;
+        }
     }
+    
     header {
         display: flex;
         align-items: center;
@@ -54,18 +77,20 @@ body {
                 box-shadow: none;
             }
         }
-        
+
     }
     #midsection{
         display: flex;
-    }
-    #content {
         background-image: url("/public/images/alexander-mcferon-757085-unsplash.jpg");
         background-size: cover;
+    }
+    #content {
         height: 90vh;
-        width: 80vw;
+        min-width: 80vw;
     }
     aside {
+        margin-left: 20vw;
+        transition: margin-left 0.5s;
         Background-color: $aside-bg-color;
         color: $aside-color;
         border-left: 3px solid black;
@@ -92,7 +117,7 @@ body {
         right: -25%;
         top: 5vh;
         transition: right 0.3s;
-        background-color: white;
+        background-color: lightgray;
         width: 20%;
         height: 20%;
         font-family: sans-serif;
@@ -100,6 +125,19 @@ body {
         border: 5px solid black;
         border-top: none;
         border-radius: 0px 0px 0px 30px;
+        .submit, #cancellogin {
+            border: 2px outset $button-text-border-color;
+            border-radius: 5px;
+            outline: 0;
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 10px 0px $button-glow-color;
+            }
+            &:active {
+                border: 3px inset $button-text-border-color;
+                box-shadow: none;
+            }
+        }
     }
     #login-form {
         margin-top: 5%;

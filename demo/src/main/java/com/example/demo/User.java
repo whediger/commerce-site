@@ -8,15 +8,18 @@ public class User {
 
   private String name;
   private String password;
+  private String isLoggedIn;
 
   public User(){
     this.name = "unknown";
     this.password = "none";
+    this.isLoggedIn = "no";
   }
 
   public User(String name, String password){
     this.name = name;
     this.password = password;
+    this.isLoggedIn = "yes";
   }
 
   public String getName(){
@@ -39,6 +42,7 @@ public class User {
     Map<String, Object> user = new HashMap<String, Object>();
     user.put("name", this.name);
     user.put("password", this.password);
+    user.put("isLoggedIn", this.isLoggedIn);
     return user;
   }
 }

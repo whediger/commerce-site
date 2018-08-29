@@ -13,22 +13,25 @@
       crossorigin="anonymous"></script>
     <script src="/public/javascript/home.js" type="text/javascript"></script>
   </head>
-  <body>
 
+  <body>
       <header>
         <nav>
           <a class="navLink" href="/cars">cars</a> |
           <a class="navLink" href="/boats">boats</a> |
           <a class="navLink" href="/houses">houses</a>
         </nav>
-        <button id="login-button" type="button" onclick="showLogin()">login</button>
+        <button id="login-button" type="button">login</button>
       </header>
       <div id="midsection">
         <div id="content">
-          <h1>Awesome Sale Shack</h1>
+          <div id="title">
+            <h1>Awesome Sale Shack</h1>
+            <h2>a place to pretend to buy expensive things</h3>
+          </div>
         </div>
 
-        <aside>
+        <aside data-isloggedin="${(user.isLoggedIn)!"no"}">
           welcome: ${(user.name)!"default Joe!"}<br>
           your password is: ${(user.password)!}<br>
           missing value: ${(user.missing)!}<br>
@@ -42,6 +45,7 @@
       <footer>
         <section id="copywrite">Copywrite © 2018 - HEDgear Software</section>
       </footer>
+
       <div id="login-model">
         <form id="login-form" action="/home" method="POST">
           <label for="username-input">User Name:</label><br>
